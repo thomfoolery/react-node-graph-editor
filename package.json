@@ -1,0 +1,45 @@
+{
+  "name": "react-node-graph-editor",
+  "version": "0.1.0",
+  "description": "a node graph editor react component",
+  "main": "dist/index.js",
+  "author": "Thomas Yuill",
+  "license": "MIT",
+  "devDependencies": {
+    "@babel/cli": "^7.8.4",
+    "@babel/core": "^7.9.0",
+    "@babel/preset-env": "^7.9.0",
+    "@babel/preset-react": "^7.9.4",
+    "babel-loader": "^8.1.0",
+    "css-loader": "^3.4.2",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
+    "style-loader": "^1.1.3",
+    "webpack": "^4.42.1",
+    "webpack-cli": "^3.3.11"
+  },
+  "peerDependencies": {
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1"
+  },
+  "scripts": {
+    "prepublish": "rm -rf ./dist && npm run build",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "webpack-dev-server --open --mode development --config webpack.config.dev.js",
+    "build": "webpack --mode production --config webpack.config.prod.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/thomfoolery/react-node-graph-editor.git"
+  },
+  "bugs": {
+    "url": "https://github.com/thomfoolery/react-node-graph-editor/issues"
+  },
+  "homepage": "https://github.com/thomfoolery/react-node-graph-editor#readme",
+  "dependencies": {
+    "extract-text-webpack-plugin": "^3.0.2",
+    "html-loader": "^1.1.0",
+    "html-webpack-plugin": "^4.0.4",
+    "webpack-dev-server": "^3.10.3"
+  }
+}
